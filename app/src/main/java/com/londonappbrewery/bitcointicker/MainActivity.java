@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Bitcoin", "JSON: " + response.toString());
 
                 try {
-                    String price = response.getString("ask");
+                    String price = response.getString("last");
                     mPriceTextView.setText(price);
                 } catch (JSONException e) {
                     e.printStackTrace();
